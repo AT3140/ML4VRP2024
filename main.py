@@ -5,10 +5,10 @@ dict_keys(['customer_1', 'customer_10', 'customer_100', 'customer_101', 'custome
 
 from vrp_evaluator.utils import load_instance, calculate_distance
 import os
-from src import helper
+from src import helper, util
 
 # load the test case
-test_case = 'X-n106-k14'
+test_case = 'X-n101-k25'
 file = f"/Instances/CVRP/{test_case}.json"
 file = os.path.join(os.getcwd(), 'Instances', 'CVRP', 'json', f"{test_case}.json")
 inst = load_instance(file)

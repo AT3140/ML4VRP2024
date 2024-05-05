@@ -83,21 +83,6 @@ def tsp(cluster_points, distance_matrix):
     edges.append((edges[-1][1], 0))
     edges.append((0, edges[0][0]))
 
-    # #debug
-    # nodes = cluster_points
-    # visited = dict()
-    # for node in nodes:
-    #     visited[node] = False
-    # for edge in edges:
-    #     visited[edge[0]] = True
-    #     visited[edge[1]] = True
-    # ok = True
-    # for a, b in visited.items():
-    #     if b is False:
-    #         ok = False
-    # print(ok)
-    # #debug
-
     return total_cost, edges
 
 def evaluate_graph_cost(edges, distance_matrix):
@@ -141,18 +126,8 @@ def algo(inst = None, toolbox = None):
     # Initialize Population 
     pop = toolbox.population(n=POP_SIZE)
 
-    # #debug
-    # ok = True
-    # for ind in pop:
-    #     if util.isFeasibleSolution(ind, inst) is False:
-    #         ok = False
-    #         break
-    # print("ok?: ", ok)
-    # #debug
-
     # Evaluate the entire population
     fitnesses = list(map(toolbox.evaluate, pop)) # Doubt: How's map different from dict. Reference of Map object in documentation not found
-    # print(fitnesses) #debug
     for ind, fit in zip(pop, fitnesses): # here ind is reference to the creator.Individual in the pop
         ind.fitness.values = (fit,) # As per creator.FitnessMin definition in helper
 
@@ -168,25 +143,46 @@ def algo(inst = None, toolbox = None):
     for GEN in range(NGEN):
         # termination on stagnation
         if GEN - last_improvement < TERM:    
-            # Select two parents via Binary Tournament each
-            parent1, parent2 = toolbox.select(pop, 2)
-            # Produce two oFspring from the parents
-            child1, child2 = toolbox.clone(parent1), toolbox.clone(parent2)
-            toolbox.mate(child1, child2); del child1.fitness.values; del child2.fitness.values
-            # Evaluate 2tness and un2tness of oFspring
-            child1.fitness.values = (toolbox.evaluate(child1),)
-            child2.fitness.values = (toolbox.evaluate(child2),)
+            decision_variable = random.random()
 
-            if util.isFeasibleSolution(child1, inst):
-                toolbox.replace(pop, child1)
-            else:
-                child1 = None
+            if decision_variable < CXPB :
+                # Select two parents via Binary Tournament each
+                parent1, parent2 = toolbox.select(pop, 2)
+                # Produce two oFspring from the parents
+                child1, child2 = toolbox.clone(parent1), toolbox.clone(parent2)
+                child1, child2 = util.getEquivalentCompatibleParents(child1, child2)
+                toolbox.mate(child1, child2); del child1.fitness.values; del child2.fitness.values
+                # Evaluate 2tness and un2tness of oFspring
+                child1.fitness.values = (toolbox.evaluate(child1),)
+                child2.fitness.values = (toolbox.evaluate(child2),)
 
-            if util.isFeasibleSolution(child2, inst):
-                toolbox.replace(pop, child2)
-            else:
-                child2 = None
+                if util.isFeasibleSolution(child1, inst):
+                    toolbox.replace(pop, child1)
+                else:
+                    child1 = None
 
+                if util.isFeasibleSolution(child2, inst):
+                    toolbox.replace(pop, child2)
+                else:
+                    child2 = None
+
+            if decision_variable < MUTPB :
+                mutation_targets = []
+                for _ in range(POP_SIZE):
+                    ind_decision_variable = random.random()
+                    if ind_decision_variable < MUTPB :
+                        candidates = toolbox.select(pop, 3)
+                        target_candidate = candidates[0]
+                        for candidate in candidates :
+                            if candidate.fitness.values[0] < target_candidate.fitness.values[0] :
+                                target_candidate = candidate
+                        mutation_targets.append(target_candidate)
+                
+                for target_individual in mutation_targets:
+                    original_individual = toolbox.clone(target_individual)
+                    toolbox.mutate(target_individual)
+                    if not util.isFeasibleSolution(target_individual, inst) :
+                        target_individual = original_individual
 
             # Choose favoured oFspring
             # for each offspring remove if not feasible
@@ -262,18 +258,41 @@ def helper(inst = None):
 
     # Register Operators
     toolbox.register("mate", tools.cxTwoPoint)
-    toolbox.register("mutate", tools.mutGaussian, mu=0, sigma=1, indpb=0.1)
     toolbox.register("select", tools.selTournament, tournsize=2)
     toolbox.register("evaluate", evaluate, inst=inst)
 
+    # Register Mutation
+    def custom_mutation(individual):
+        no_of_vehicles = max(individual) + 1
+        selected_vehicle = math.floor(random.random() * no_of_vehicles)
+        ngbr_vehicle = (selected_vehicle + 1) %  no_of_vehicles
+        find_ngbr = False
+        for i in range(2 * len(individual)):
+            i = i % len(individual)
+            if find_ngbr:
+                if individual[i] == ngbr_vehicle:
+                    b = i
+                    break
+            else:
+                if individual[i] == selected_vehicle:
+                    a = i
+                    find_ngbr = True
+        
+        individual[a], individual[b] = individual[b], individual[a]
+
+    toolbox.register("mutate", custom_mutation)
+
     # Register Replacement Scheme    
     def custom_steady_state(population, offspring):
-        parents = toolbox.select(population, 3) # TODO: change to worst fitness
-        for parent in parents:
-            if offspring.fitness.values[0] < parent.fitness.values[0] :
-                population.remove(parent)
-                population.append(offspring)
-                break
+        parents = toolbox.select(population, 3) 
+        target_parent = parents[0]
+
+        for i in range(len(parents)):
+            if parents[i].fitness.values[0] < target_parent.fitness.values[0] :
+                target_parent = parents[i]
+
+        population.remove(target_parent)
+        population.append(offspring)
 
     toolbox.register("replace", custom_steady_state)
 
@@ -300,7 +319,4 @@ def helper(inst = None):
         util.plot_graph(nodes, edges, coordinates) # debug
 
     print("Best Fitness: ", fitness)
-    print("Best Fitness: ", toolbox.evaluate(fittestInd))
-    print(fittestInd.fitness.values[0])
-    print("No of Vehicles: ", max(fittestInd))
-    # debug
+    print("No of Vehicles: ", max(fittestInd) + 1)

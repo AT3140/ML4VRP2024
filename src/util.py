@@ -101,3 +101,37 @@ def isFeasibleSolution(individual, inst):
             break
 
     return ok
+
+def isAnyIdleVehicle(solution):
+    retVal = False
+    test_root = [0 for _ in range(max(solution) + 1)]
+    for i in range(len(solution)):
+        test_root[solution[i]] = 1
+    if min(test_root) == 0:
+        retVal = True
+        print("idle vehicle observed....")
+        print(sorted(solution))
+    return retVal
+
+def getEquivalentCompatibleParents(parent1, parent2):    
+    vehicle_counter_limit = min(max(parent1), max(parent2))
+    root = [0 for _ in range(len(parent1))]
+    for curr_vehicle in range(vehicle_counter_limit + 1):
+        try:
+            p1_customer_i_at_curr_vehicle = parent1.index(curr_vehicle)
+            while root[p1_customer_i_at_curr_vehicle] == 1 :
+                p1_customer_i_at_curr_vehicle = parent1.index(curr_vehicle, p1_customer_i_at_curr_vehicle + 1)
+            corr_vehicle_in_p2 = parent2[p1_customer_i_at_curr_vehicle]
+            a, b = curr_vehicle, corr_vehicle_in_p2
+            for i in range(len(parent2)):
+                if root[i] == 0 :
+                    if parent2[i] == a :
+                        parent2[i] = b
+                    elif parent2[i] == b :
+                        parent2[i] = a
+                    if parent2[i] == curr_vehicle :
+                        root[i] = 1
+        except ValueError:
+            pass
+
+    return parent1, parent2

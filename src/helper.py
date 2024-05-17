@@ -276,11 +276,11 @@ def kmeansGeneration(num_clusters, ind_size, inst):
             individual[closest_customer_i] = vehicle_counter
             curr_load = curr_load + util.getCustomerDemand(closest_customer_id, inst)
 
-    cluster_loads = [0 for _ in range(num_clusters)]
-    for i, cluster_id in enumerate(individual):
-        cust_id = i + 1
-        cust_demand = util.getCustomerDemand(cust_id, inst)
-        cluster_loads[cluster_id] = cluster_loads[cluster_id] + cust_demand
+    # cluster_loads = [0 for _ in range(num_clusters)]
+    # for i, cluster_id in enumerate(individual):
+    #     cust_id = i + 1
+    #     cust_demand = util.getCustomerDemand(cust_id, inst)
+    #     cluster_loads[cluster_id] = cluster_loads[cluster_id] + cust_demand
 
     return individual
 

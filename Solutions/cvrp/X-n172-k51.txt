@@ -4,48 +4,48 @@ Route #2: 71 2
 Route #3: 166 3 
 Route #4: 20 4 
 Route #5: 80 6 43 15 
-Route #6: 65 18 16 32 91 7 
+Route #6: 65 51 18 91 7 122 
 Route #7: 170 104 78 81 8 
-Route #8: 67 171 48 68 13 11 161 114 
+Route #8: 67 171 68 161 11 110 114 
 Route #9: 12 85 
-Route #10: 86 156 154 17 135 14 
-Route #11: 139 21 
-Route #12: 22 152 131 87 155 149 
-Route #13: 49 24 
-Route #14: 25 116 
-Route #15: 55 26 
-Route #16: 27 
-Route #17: 28 
-Route #18: 151 73 66 30 79 
-Route #19: 42 63 45 31 
-Route #20: 134 54 33 
-Route #21: 34 160 
-Route #22: 35 141 
-Route #23: 36 157 
-Route #24: 127 105 119 37 99 164 93 
-Route #25: 38 
-Route #26: 136 39 64 
-Route #27: 40 109 
-Route #28: 84 41 106 
-Route #29: 169 77 44 72 56 
-Route #30: 133 46 
-Route #31: 100 47 
-Route #32: 162 50 
-Route #33: 51 112 122 108 158 
-Route #34: 52 
-Route #35: 69 60 53 
+Route #10: 48 13 69 60 53 
+Route #11: 86 156 154 17 135 14 
+Route #12: 16 32 
+Route #13: 129 21 
+Route #14: 22 132 152 62 92 70 
+Route #15: 49 24 
+Route #16: 25 116 
+Route #17: 55 26 
+Route #18: 27 
+Route #19: 28 
+Route #20: 151 73 66 30 79 
+Route #21: 42 63 45 31 
+Route #22: 134 54 33 
+Route #23: 34 160 
+Route #24: 35 141 
+Route #25: 36 157 
+Route #26: 121 119 37 99 142 93 
+Route #27: 38 
+Route #28: 136 39 64 
+Route #29: 40 109 
+Route #30: 84 41 106 
+Route #31: 169 77 44 72 56 
+Route #32: 133 46 
+Route #33: 100 47 
+Route #34: 162 50 
+Route #35: 52 
 Route #36: 57 76 
 Route #37: 126 58 
 Route #38: 101 59 
-Route #39: 61 121 142 94 
-Route #40: 132 62 92 110 70 
-Route #41: 147 74 
-Route #42: 150 75 
-Route #43: 167 83 
+Route #39: 61 107 94 96 89 98 
+Route #40: 147 74 
+Route #41: 150 75 
+Route #42: 167 83 
+Route #43: 131 87 103 155 149 
 Route #44: 102 88 
-Route #45: 103 107 96 89 98 
-Route #46: 95 90 
-Route #47: 97 
+Route #45: 95 90 
+Route #46: 97 
+Route #47: 112 127 105 108 164 158 
 Route #48: 153 111 
 Route #49: 113 
 Route #50: 115 
@@ -55,9 +55,9 @@ Route #53: 120 145
 Route #54: 123 146 
 Route #55: 124 144 
 Route #56: 143 125 
-Route #57: 129 
-Route #58: 130 138 
-Route #59: 137 
+Route #57: 130 138 
+Route #58: 137 
+Route #59: 139 
 Route #60: 148 
 Route #61: 159 
 Route #62: 163 

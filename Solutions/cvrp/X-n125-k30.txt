@@ -1,6 +1,6 @@
 File: D:\ML4VRP2024\Instances\CVRP\json\X-n125-k30.json exists.
 Route #1: 85 117 55 27 36 79 1 46 
-Route #2: 82 116 50 2 70 
+Route #2: 82 116 50 2 
 Route #3: 3 102 16 
 Route #4: 95 94 58 80 4 20 65 
 Route #5: 5 33 
@@ -11,7 +11,7 @@ Route #9: 15 78 28 9 19 59
 Route #10: 10 39 
 Route #11: 14 97 74 13 92 11 114 
 Route #12: 12 
-Route #13: 17 124 
+Route #13: 17 124 70 
 Route #14: 21 18 
 Route #15: 109 25 68 47 22 40 118 63 
 Route #16: 23 115 88 89 

@@ -196,7 +196,7 @@ def algo(inst = None, toolbox = None):
                     last_improvement = GEN
                     fittestInd = toolbox.clone(ind)
 
-            print(f"Generation {GEN}, Best Fitness : {fittestInd.fitness.values[0]}")
+            # print(f"Generation {GEN}, Best Fitness : {fittestInd.fitness.values[0]}")
             # print(fittestInd)
 
     return fittestInd
@@ -311,12 +311,27 @@ def helper(inst = None):
         except KeyError:
             clusters[cluster_id] = [customer_id]
 
+    route_counter = 0
     for cluster_id, nodes in clusters.items():
         distance_matrix = inst["distance_matrix"]
         if len(nodes) > 0 :
             cost, edges = tsp(nodes, distance_matrix)
             fitness = fitness + cost
-        util.plot_graph(nodes, edges, coordinates) # debug
 
-    print("Best Fitness: ", fitness)
-    print("No of Vehicles: ", max(fittestInd) + 1)
+            route_counter = route_counter + 1
+            print(f"Route #{route_counter}:", end=" ")
+            start_i = 0
+            for i in range(len(edges)):
+                if edges[i][0] == 0 :
+                    start_i = i
+                    break
+            curr_i = start_i
+            while edges[curr_i][1] != 0 :
+                print(edges[curr_i][1], end=" ")
+                curr_i = (curr_i + 1) % len(edges)
+            print()
+
+        util.plot_graph(nodes, edges, coordinates) 
+
+    # print("Cost ", fitness)
+    # print("No of Vehicles: ", max(fittestInd) + 1)

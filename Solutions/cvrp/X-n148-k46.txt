@@ -1,0 +1,55 @@
+File: D:\ML4VRP2024\Instances\CVRP\json\X-n148-k46.json exists.
+Route #1: 1 5 
+Route #2: 2 79 139 33 13 
+Route #3: 31 15 117 3 
+Route #4: 19 4 102 131 16 12 
+Route #5: 23 26 6 
+Route #6: 98 67 61 7 
+Route #7: 8 125 116 135 
+Route #8: 51 9 24 
+Route #9: 68 54 10 14 
+Route #10: 124 38 11 50 
+Route #11: 62 17 35 
+Route #12: 75 18 
+Route #13: 57 20 81 120 
+Route #14: 21 69 63 
+Route #15: 27 22 55 
+Route #16: 46 76 25 
+Route #17: 140 28 
+Route #18: 121 29 
+Route #19: 30 
+Route #20: 136 82 32 
+Route #21: 34 36 
+Route #22: 73 37 
+Route #23: 39 60 65 
+Route #24: 52 40 48 
+Route #25: 41 78 
+Route #26: 42 109 70 
+Route #27: 43 56 
+Route #28: 44 129 
+Route #29: 45 147 141 133 
+Route #30: 47 101 119 
+Route #31: 86 111 96 49 145 66 
+Route #32: 126 53 90 
+Route #33: 58 143 
+Route #34: 59 71 
+Route #35: 94 64 144 
+Route #36: 72 95 
+Route #37: 114 108 74 
+Route #38: 127 77 
+Route #39: 130 80 
+Route #40: 83 87 
+Route #41: 84 122 
+Route #42: 118 85 
+Route #43: 88 106 
+Route #44: 89 138 
+Route #45: 128 91 
+Route #46: 99 107 92 
+Route #47: 93 
+Route #48: 132 97 
+Route #49: 100 115 
+Route #50: 105 103 
+Route #51: 137 104 
+Route #52: 110 142 113 
+Route #53: 134 112 
+Route #54: 123 146 

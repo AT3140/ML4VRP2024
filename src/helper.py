@@ -16,6 +16,7 @@ from functools import partial
 import math
 from src import util
 import numpy as np
+from sklearn.cluster import KMeans
 
 def print_routes(routes):
     for i in range(len(routes)):
@@ -120,8 +121,8 @@ def evaluate(individual, inst=None):
     return fitness
 
 def algo(inst = None, toolbox = None):
-    POP_SIZE = 30  # Population Size
-    CXPB, MUTPB, NGEN, TERM = 0.2, 0.8, 1000, 1000
+    POP_SIZE = 40  # Population Size
+    CXPB, MUTPB, NGEN, TERM = 0.9, 0.1, 1000, 50
 
     # Initialize Population 
     pop = toolbox.population(n=POP_SIZE)
@@ -241,6 +242,58 @@ def sweepGeneration(ind_size, inst):
 
     return individual
 
+def kmeansGeneration(num_clusters, ind_size, inst):
+    cust_coordinates = util.transform_inst_to_networkx_coord(inst)
+    coordinates = []
+    for cust_key in range(1, inst['max_vehicle_number']):
+        coordinates.append(cust_coordinates[cust_key])
+
+    kmeans = KMeans(n_clusters=num_clusters, random_state=0, n_init="auto").fit(coordinates)
+    cluster_centers = list(kmeans.cluster_centers_)
+    individual = [-1 for _ in range(len(coordinates))]
+    random.shuffle(cluster_centers)
+    vehicle_counter = 0
+    curr_load = 0
+    curr_cluster_center_i = 0
+
+    while min(individual) == -1 :
+        closest_customer_i = -1
+        closest_customer_id = closest_customer_i + 1 
+        min_dist = math.inf
+        for cust_i, vehicle_i in enumerate(individual):
+            cust_id = cust_i + 1
+            if individual[cust_i] == -1:
+                dist_with_curr_cluster_center = util.calc_distance(cluster_centers[curr_cluster_center_i % len(cluster_centers)], cust_coordinates[closest_customer_id])
+                if curr_load + util.getCustomerDemand(cust_id, inst) <= inst['vehicle_capacity'] and dist_with_curr_cluster_center < min_dist :
+                    min_dist = dist_with_curr_cluster_center
+                    closest_customer_i = cust_i
+                    closest_customer_id = cust_id
+        if closest_customer_i == -1 :           
+            vehicle_counter = vehicle_counter + 1
+            curr_load = 0
+            curr_cluster_center_i = curr_cluster_center_i + 1
+        else:
+            individual[closest_customer_i] = vehicle_counter
+            curr_load = curr_load + util.getCustomerDemand(closest_customer_id, inst)
+
+    cluster_loads = [0 for _ in range(num_clusters)]
+    for i, cluster_id in enumerate(individual):
+        cust_id = i + 1
+        cust_demand = util.getCustomerDemand(cust_id, inst)
+        cluster_loads[cluster_id] = cluster_loads[cluster_id] + cust_demand
+
+    return individual
+
+def helperGeneration(ind_size, inst):
+    individual = sweepGeneration(ind_size, inst)
+    MLGENPB = 0.5
+    decision_variable = random.random()
+    if decision_variable < MLGENPB :
+        num_routes = max(individual)
+        temp_individual = kmeansGeneration(num_routes, ind_size, inst)
+        if util.isFeasibleSolution(temp_individual, inst):
+            individual = temp_individual
+    return individual
 
 def helper(inst = None):
     # Configure Creator
@@ -252,7 +305,7 @@ def helper(inst = None):
     toolbox = base.Toolbox()
     toolbox.register("attribute", random.randint, 0, 5)
     # toolbox.register("individual", tools.initRepeat, creator.Individual, toolbox.attribute, n=IND_SIZE) #TODO: remove this line
-    toolbox.register("individual", tools.initIterate, creator.Individual, lambda: sweepGeneration(IND_SIZE, inst) )
+    toolbox.register("individual", tools.initIterate, creator.Individual, lambda: helperGeneration(IND_SIZE, inst) )
     toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 
 

@@ -1,0 +1,31 @@
+File: D:\ML4VRP2024\Instances\CVRP\json\X-n101-k25.json exists.
+Route #1: 1 
+Route #2: 58 39 25 2 
+Route #3: 34 64 3 96 59 87 
+Route #4: 4 13 74 
+Route #5: 5 68 86 
+Route #6: 44 14 6 37 
+Route #7: 12 18 7 
+Route #8: 8 56 38 47 
+Route #9: 54 92 9 
+Route #10: 10 65 78 49 
+Route #11: 79 30 85 11 
+Route #12: 15 22 70 
+Route #13: 55 69 16 
+Route #14: 80 17 
+Route #15: 50 23 19 81 
+Route #16: 35 20 41 
+Route #17: 21 100 27 89 
+Route #18: 32 24 46 31 
+Route #19: 94 26 48 
+Route #20: 63 28 42 45 
+Route #21: 77 36 29 
+Route #22: 75 93 33 
+Route #23: 40 88 57 72 82 43 
+Route #24: 91 51 71 
+Route #25: 52 62 99 
+Route #26: 95 53 73 
+Route #27: 67 60 
+Route #28: 61 98 
+Route #29: 66 84 90 76 
+Route #30: 97 83 

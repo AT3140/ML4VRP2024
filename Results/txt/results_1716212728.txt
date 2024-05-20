@@ -1,0 +1,177 @@
+Problem:  cvrp  Instance name:  X-n101-k25  Solution path:  Solutions/cvrp\X-n101-k25.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n101-k25.json exists.
+Number of vehicles:  31 , Total distance:  35814.0 Objective value:  66814.0
+Problem:  cvrp  Instance name:  X-n106-k14  Solution path:  Solutions/cvrp\X-n106-k14.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n106-k14.json exists.
+Number of vehicles:  14 , Total distance:  30338.0 Objective value:  44338.0
+Problem:  cvrp  Instance name:  X-n110-k13  Solution path:  Solutions/cvrp\X-n110-k13.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n110-k13.json exists.
+Number of vehicles:  13 , Total distance:  16851.0 Objective value:  29851.0
+Problem:  cvrp  Instance name:  X-n115-k10  Solution path:  Solutions/cvrp\X-n115-k10.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n115-k10.json exists.
+Number of vehicles:  11 , Total distance:  16308.0 Objective value:  27308.0
+Problem:  cvrp  Instance name:  X-n120-k6  Solution path:  Solutions/cvrp\X-n120-k6.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n120-k6.json exists.
+Number of vehicles:  6 , Total distance:  16897.0 Objective value:  22897.0
+Problem:  cvrp  Instance name:  X-n125-k30  Solution path:  Solutions/cvrp\X-n125-k30.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n125-k30.json exists.
+Number of vehicles:  37 , Total distance:  71205.0 Objective value:  108205.0
+Problem:  cvrp  Instance name:  X-n129-k18  Solution path:  Solutions/cvrp\X-n129-k18.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n129-k18.json exists.
+Number of vehicles:  19 , Total distance:  38652.0 Objective value:  57652.0
+Problem:  cvrp  Instance name:  X-n134-k13  Solution path:  Solutions/cvrp\X-n134-k13.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n134-k13.json exists.
+Number of vehicles:  14 , Total distance:  15032.0 Objective value:  29032.0
+Problem:  cvrp  Instance name:  X-n139-k10  Solution path:  Solutions/cvrp\X-n139-k10.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n139-k10.json exists.
+Number of vehicles:  10 , Total distance:  16430.0 Objective value:  26430.0
+Problem:  cvrp  Instance name:  X-n143-k7  Solution path:  Solutions/cvrp\X-n143-k7.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n143-k7.json exists.
+Number of vehicles:  7 , Total distance:  19585.0 Objective value:  26585.0
+Problem:  cvrp  Instance name:  X-n148-k46  Solution path:  Solutions/cvrp\X-n148-k46.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n148-k46.json exists.
+Number of vehicles:  54 , Total distance:  56516.0 Objective value:  110516.0
+Problem:  cvrp  Instance name:  X-n153-k22  Solution path:  Solutions/cvrp\X-n153-k22.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n153-k22.json exists.
+Number of vehicles:  29 , Total distance:  28788.0 Objective value:  57788.0
+Problem:  cvrp  Instance name:  X-n157-k13  Solution path:  Solutions/cvrp\X-n157-k13.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n157-k13.json exists.
+Number of vehicles:  13 , Total distance:  18949.0 Objective value:  31949.0
+Problem:  cvrp  Instance name:  X-n162-k11  Solution path:  Solutions/cvrp\X-n162-k11.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n162-k11.json exists.
+Number of vehicles:  11 , Total distance:  15858.0 Objective value:  26858.0
+Problem:  cvrp  Instance name:  X-n167-k10  Solution path:  Solutions/cvrp\X-n167-k10.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n167-k10.json exists.
+Number of vehicles:  10 , Total distance:  26237.0 Objective value:  36237.0
+Problem:  cvrp  Instance name:  X-n172-k51  Solution path:  Solutions/cvrp\X-n172-k51.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n172-k51.json exists.
+Number of vehicles:  63 , Total distance:  60268.0 Objective value:  123268.0
+Problem:  cvrp  Instance name:  X-n176-k26  Solution path:  Solutions/cvrp\X-n176-k26.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n176-k26.json exists.
+Number of vehicles:  33 , Total distance:  69508.0 Objective value:  102508.0
+Problem:  cvrp  Instance name:  X-n181-k23  Solution path:  Solutions/cvrp\X-n181-k23.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n181-k23.json exists.
+Number of vehicles:  23 , Total distance:  29886.0 Objective value:  52886.0
+Problem:  cvrp  Instance name:  X-n186-k15  Solution path:  Solutions/cvrp\X-n186-k15.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n186-k15.json exists.
+Number of vehicles:  15 , Total distance:  29867.0 Objective value:  44867.0
+Problem:  cvrp  Instance name:  X-n190-k8  Solution path:  Solutions/cvrp\X-n190-k8.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n190-k8.json exists.
+Number of vehicles:  8 , Total distance:  19616.0 Objective value:  27616.0
+Problem:  cvrp  Instance name:  X-n195-k51  Solution path:  Solutions/cvrp\X-n195-k51.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n195-k51.json exists.
+Number of vehicles:  63 , Total distance:  60050.0 Objective value:  123050.0
+Problem:  cvrp  Instance name:  X-n200-k36  Solution path:  Solutions/cvrp\X-n200-k36.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n200-k36.json exists.
+Number of vehicles:  39 , Total distance:  69164.0 Objective value:  108164.0
+Problem:  cvrp  Instance name:  X-n204-k19  Solution path:  Solutions/cvrp\X-n204-k19.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n204-k19.json exists.
+Number of vehicles:  19 , Total distance:  23890.0 Objective value:  42890.0
+Problem:  cvrp  Instance name:  X-n209-k16  Solution path:  Solutions/cvrp\X-n209-k16.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n209-k16.json exists.
+Number of vehicles:  16 , Total distance:  37205.0 Objective value:  53205.0
+Problem:  cvrp  Instance name:  X-n214-k11  Solution path:  Solutions/cvrp\X-n214-k11.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n214-k11.json exists.
+Number of vehicles:  12 , Total distance:  14317.0 Objective value:  26317.0
+Problem:  cvrp  Instance name:  X-n219-k73  Solution path:  Solutions/cvrp\X-n219-k73.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n219-k73.json exists.
+Number of vehicles:  73 , Total distance:  143352.0 Objective value:  216352.0
+Problem:  cvrp  Instance name:  X-n223-k34  Solution path:  Solutions/cvrp\X-n223-k34.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n223-k34.json exists.
+Number of vehicles:  36 , Total distance:  48878.0 Objective value:  84878.0
+Problem:  cvrp  Instance name:  X-n228-k23  Solution path:  Solutions/cvrp\X-n228-k23.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n228-k23.json exists.
+Number of vehicles:  28 , Total distance:  33755.0 Objective value:  61755.0
+Problem:  cvrp  Instance name:  X-n233-k16  Solution path:  Solutions/cvrp\X-n233-k16.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n233-k16.json exists.
+Number of vehicles:  17 , Total distance:  24340.0 Objective value:  41340.0
+Problem:  cvrp  Instance name:  X-n237-k14  Solution path:  Solutions/cvrp\X-n237-k14.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n237-k14.json exists.
+Number of vehicles:  14 , Total distance:  33768.0 Objective value:  47768.0
+Problem:  cvrp  Instance name:  X-n242-k48  Solution path:  Solutions/cvrp\X-n242-k48.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n242-k48.json exists.
+Number of vehicles:  53 , Total distance:  111049.0 Objective value:  164049.0
+Problem:  cvrp  Instance name:  X-n247-k50  Solution path:  Solutions/cvrp\X-n247-k50.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n247-k50.json exists.
+Number of vehicles:  65 , Total distance:  53574.0 Objective value:  118574.0
+Problem:  cvrp  Instance name:  X-n251-k28  Solution path:  Solutions/cvrp\X-n251-k28.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n251-k28.json exists.
+Number of vehicles:  29 , Total distance:  47001.0 Objective value:  76001.0
+Problem:  cvrp  Instance name:  X-n256-k16  Solution path:  Solutions/cvrp\X-n256-k16.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n256-k16.json exists.
+Number of vehicles:  17 , Total distance:  22145.0 Objective value:  39145.0
+Problem:  cvrp  Instance name:  X-n261-k13  Solution path:  Solutions/cvrp\X-n261-k13.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n261-k13.json exists.
+Number of vehicles:  13 , Total distance:  33056.0 Objective value:  46056.0
+Problem:  cvrp  Instance name:  X-n266-k58  Solution path:  Solutions/cvrp\X-n266-k58.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n266-k58.json exists.
+Number of vehicles:  64 , Total distance:  106530.0 Objective value:  170530.0
+Problem:  cvrp  Instance name:  X-n270-k35  Solution path:  Solutions/cvrp\X-n270-k35.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n270-k35.json exists.
+Number of vehicles:  38 , Total distance:  41968.0 Objective value:  79968.0
+Problem:  cvrp  Instance name:  X-n275-k28  Solution path:  Solutions/cvrp\X-n275-k28.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n275-k28.json exists.
+Number of vehicles:  28 , Total distance:  25638.0 Objective value:  53638.0
+Problem:  cvrp  Instance name:  X-n280-k17  Solution path:  Solutions/cvrp\X-n280-k17.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n280-k17.json exists.
+Number of vehicles:  20 , Total distance:  48318.0 Objective value:  68318.0
+Problem:  cvrp  Instance name:  X-n284-k15  Solution path:  Solutions/cvrp\X-n284-k15.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n284-k15.json exists.
+Number of vehicles:  15 , Total distance:  25141.0 Objective value:  40141.0
+Problem:  cvrp  Instance name:  X-n289-k60  Solution path:  Solutions/cvrp\X-n289-k60.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n289-k60.json exists.
+Number of vehicles:  69 , Total distance:  139342.0 Objective value:  208342.0
+Problem:  cvrp  Instance name:  X-n294-k50  Solution path:  Solutions/cvrp\X-n294-k50.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n294-k50.json exists.
+Number of vehicles:  56 , Total distance:  59861.0 Objective value:  115861.0
+Problem:  cvrp  Instance name:  X-n298-k31  Solution path:  Solutions/cvrp\X-n298-k31.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n298-k31.json exists.
+Number of vehicles:  33 , Total distance:  43277.0 Objective value:  76277.0
+Problem:  cvrp  Instance name:  X-n303-k21  Solution path:  Solutions/cvrp\X-n303-k21.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n303-k21.json exists.
+Number of vehicles:  21 , Total distance:  25936.0 Objective value:  46936.0
+Problem:  cvrp  Instance name:  X-n308-k13  Solution path:  Solutions/cvrp\X-n308-k13.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n308-k13.json exists.
+Number of vehicles:  13 , Total distance:  33307.0 Objective value:  46307.0
+Problem:  cvrp  Instance name:  X-n313-k71  Solution path:  Solutions/cvrp\X-n313-k71.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n313-k71.json exists.
+Number of vehicles:  82 , Total distance:  118750.0 Objective value:  200750.0
+Problem:  cvrp  Instance name:  X-n317-k53  Solution path:  Solutions/cvrp\X-n317-k53.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n317-k53.json exists.
+Number of vehicles:  53 , Total distance:  96073.0 Objective value:  149073.0
+Problem:  cvrp  Instance name:  X-n322-k28  Solution path:  Solutions/cvrp\X-n322-k28.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n322-k28.json exists.
+Number of vehicles:  29 , Total distance:  36198.0 Objective value:  65198.0
+Problem:  cvrp  Instance name:  X-n327-k20  Solution path:  Solutions/cvrp\X-n327-k20.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n327-k20.json exists.
+Number of vehicles:  20 , Total distance:  36133.0 Objective value:  56133.0
+Problem:  cvrp  Instance name:  X-n331-k15  Solution path:  Solutions/cvrp\X-n331-k15.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n331-k15.json exists.
+Number of vehicles:  15 , Total distance:  37642.0 Objective value:  52642.0
+Problem:  cvrp  Instance name:  X-n336-k84  Solution path:  Solutions/cvrp\X-n336-k84.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n336-k84.json exists.
+Number of vehicles:  99 , Total distance:  202939.0 Objective value:  301939.0
+Problem:  cvrp  Instance name:  X-n344-k43  Solution path:  Solutions/cvrp\X-n344-k43.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n344-k43.json exists.
+Number of vehicles:  45 , Total distance:  50319.0 Objective value:  95319.0
+Problem:  cvrp  Instance name:  X-n351-k40  Solution path:  Solutions/cvrp\X-n351-k40.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n351-k40.json exists.
+Number of vehicles:  43 , Total distance:  34258.0 Objective value:  77258.0
+Problem:  cvrp  Instance name:  X-n359-k29  Solution path:  Solutions/cvrp\X-n359-k29.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n359-k29.json exists.
+Number of vehicles:  30 , Total distance:  67729.0 Objective value:  97729.0
+Problem:  cvrp  Instance name:  X-n367-k17  Solution path:  Solutions/cvrp\X-n367-k17.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n367-k17.json exists.
+Number of vehicles:  19 , Total distance:  30936.0 Objective value:  49936.0
+Problem:  cvrp  Instance name:  X-n376-k94  Solution path:  Solutions/cvrp\X-n376-k94.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n376-k94.json exists.
+Number of vehicles:  94 , Total distance:  188860.0 Objective value:  282860.0
+Problem:  cvrp  Instance name:  X-n384-k52  Solution path:  Solutions/cvrp\X-n384-k52.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n384-k52.json exists.
+Number of vehicles:  56 , Total distance:  88647.0 Objective value:  144647.0
+Problem:  cvrp  Instance name:  X-n393-k38  Solution path:  Solutions/cvrp\X-n393-k38.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n393-k38.json exists.
+Number of vehicles:  39 , Total distance:  46118.0 Objective value:  85118.0
+Problem:  cvrp  Instance name:  X-n401-k29  Solution path:  Solutions/cvrp\X-n401-k29.txt
+File: D:\ML4VRP2024\Instances\cvrp\json\X-n401-k29.json exists.
+Number of vehicles:  30 , Total distance:  77760.0 Objective value:  107760.0
